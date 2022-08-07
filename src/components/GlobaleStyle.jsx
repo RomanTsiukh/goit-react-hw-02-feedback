@@ -9,6 +9,7 @@ export const GlobalStyle = createGlobalStyle`
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: linear-gradient(to bottom, rgb(68, 104, 234), rgb(221, 239, 13));
 }
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
