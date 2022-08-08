@@ -1,11 +1,15 @@
-// import React from 'react';
 import { Component } from 'react';
 import styled from 'styled-components';
 import FeedbackOptions from './FeedbackOptions';
-import Statistics from 'components/Fedback/Statistics';
+import Statistics from 'components/Statistics';
+import Notification from './Notification';
 import Section from './Section';
 
-const Box = styled.div``;
+const Box = styled.div`
+  padding: 20px;
+  border: 1px solid black;
+  border-radius: 20px;
+`;
 
 class Fedback extends Component {
   state = {
@@ -30,6 +34,7 @@ class Fedback extends Component {
     if (this.state.good === 0) {
       return 0;
     }
+
     if (this.state.good > 0) {
       return Math.round((100 * this.state.good) / this.countTotalFeedback());
     }
@@ -56,7 +61,7 @@ class Fedback extends Component {
             />
           </Section>
         ) : (
-          <p>There is no feedback</p>
+          <Notification message="There is no feedback"></Notification>
         )}
       </Box>
     );

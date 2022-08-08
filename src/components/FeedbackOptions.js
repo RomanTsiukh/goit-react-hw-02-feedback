@@ -7,14 +7,23 @@ const List = styled.ul`
   gap: 1rem;
 `;
 
+const Button = styled.button`
+  border-radius: 10px;
+  &:hover {
+    background-color: purple;
+    color: white;
+    transform: scale(1.2);
+  }
+`;
+
 const FeedbackOptions = ({ options, onLeaveFeedback }) => {
   return (
     <List>
       {Object.keys(options).map(key => (
         <li key={key}>
-          <button type="button" onClick={() => onLeaveFeedback(key)}>
+          <Button type="button" onClick={() => onLeaveFeedback(key)}>
             {key.charAt(0).toUpperCase() + key.slice(1)}
-          </button>
+          </Button>
         </li>
       ))}
     </List>

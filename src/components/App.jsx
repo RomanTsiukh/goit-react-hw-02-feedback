@@ -1,5 +1,5 @@
 import { GlobalStyle } from 'components/GlobaleStyle';
-import Fedback from './Fedback/Fedback';
+import Fedback from './Fedback';
 
 export const App = () => {
   return (
