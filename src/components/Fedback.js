@@ -26,7 +26,8 @@ class Fedback extends Component {
 
   countTotalFeedback = () => {
     return Object.values(this.state).reduce(
-      (previousValue, elem) => previousValue + elem
+      (previousValue, elem) => previousValue + elem,
+      0
     );
   };
 
