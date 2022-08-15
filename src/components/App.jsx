@@ -1,5 +1,5 @@
 import { GlobalStyle } from 'components/GlobaleStyle';
-import Fedback from './Fedback';
+import Feedback from './Feedback';
 
 export const App = () => {
   return (
@@ -13,7 +13,7 @@ export const App = () => {
       }}
     >
       <GlobalStyle />
-      <Fedback />
+      <Feedback />
     </div>
   );
 };

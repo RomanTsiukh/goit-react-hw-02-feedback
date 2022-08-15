@@ -11,7 +11,7 @@ const Box = styled.div`
   border-radius: 20px;
 `;
 
-class Fedback extends Component {
+class Feedback extends Component {
   state = {
     good: 0,
     neutral: 0,
@@ -69,4 +69,4 @@ class Fedback extends Component {
   }
 }
 
-export default Fedback;
+export default Feedback;
